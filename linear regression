@@ -4,4 +4,5 @@ x=[1,2,3,4]
 y=[1,5,9,7]
 plt.plot(x,y,'ro')
 plt.axis([0,6,0,20])
+plt.plot(np.unique(x),np.poly1d(np.ployfit(x,y,1))(np.unique(x))
 plt.show()
